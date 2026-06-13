@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.Manjunath - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Design -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-content">
+            <a href="#home" class="logo">Manju.</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#github-sec">GitHub</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="display:none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content fade-up">
+                <span class="greeting">Hello, I am</span>
+                <h1>G. Manjunath</h1>
+                <h2 class="title" style="color: var(--primary-color);">Aspiring Web Developer</h2>
+                <p class="intro">A passionate first-year AIML student building modern, responsive web applications.</p>
+                <div class="hero-bottom-actions">
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary">View Projects</a>
+                        <a href="#contact" class="btn secondary">Contact Me</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/manjumudhiraj" target="_blank" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="www.linkedin.com/in/manjunath-garela-6ba240410" target="_blank"
+                            aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title fade-up">About Me</h2>
+                <div class="about-card glass-panel fade-up">
+                    <div class="about-text">
+                        <p>I am a <strong>first-year BTech student specializing in Artificial Intelligence and Machine
+                                Learning (AIML)</strong>.</p>
+                        <p>Beyond the classroom, I have cultivated a deep interest in web development. I thrive on
+                            bringing ideas to life through code, embracing a strong learning mindset that pushes me to
+                            stay updated with modern development practices.</p>
+                        <p>My core focus is on building real-world projects that solve problems, using clean, semantic,
+                            and highly responsive code. Connecting AI components with robust frontend interfaces is a
+                            key vision for my future growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title fade-up">Technical Skills</h2>
+                <div class="skills-grid">
+
+                    <div class="skill-card glass-panel fade-up" style="transition-delay: 0.1s;">
+                        <div class="skill-icon" style="color: #E34F26;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3>HTML</h3>
+                        <p class="skill-desc">Semantic markup</p>
+                    </div>
+
+                    <div class="skill-card glass-panel fade-up" style="transition-delay: 0.2s;">
+                        <div class="skill-icon" style="color: #1572B6;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <h3>CSS</h3>
+                        <p class="skill-desc">Responsive design, Flexbox, Grid</p>
+                    </div>
+
+                    <div class="skill-card glass-panel fade-up" style="transition-delay: 0.3s;">
+                        <div class="skill-icon" style="color: #F7DF1E;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p class="skill-desc">DOM manipulation, basic logic</p>
+                    </div>
+
+                    <div class="skill-card glass-panel fade-up" style="transition-delay: 0.4s;">
+                        <div class="skill-icon" style="color: #3776AB;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Python</h3>
+                        <p class="skill-desc">Scripting & Logic</p>
+                    </div>
+
+                    <div class="skill-card glass-panel fade-up" style="transition-delay: 0.5s;">
+                        <div class="skill-icon" style="color: #8A2BE2;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                            </svg>
+                        </div>
+                        <h3>Cloud Computing</h3>
+                        <p class="skill-desc">Deployment & Hosting</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title fade-up">Projects</h2>
+                <div class="projects-grid">
+
+                    <!-- Digital Business Card -->
+                    <div class="project-card glass-panel fade-up">
+                        <div class="project-image" style="background: linear-gradient(135deg, #10b981, #047857);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+                                <path d="M6 8h.01"></path>
+                                <path d="M10 8h8"></path>
+                                <path d="M6 12h.01"></path>
+                                <path d="M10 12h8"></path>
+                                <path d="M6 16h.01"></path>
+                                <path d="M10 16h8"></path>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <h3>Digital Business Card</h3>
+                            <p>A responsive, modern digital business card allowing seamless sharing of contact
+                                information and professional links.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://manjumudhiraj.github.io/business-card/" class="btn-small"
+                                    target="_blank">Live Demo</a>
+                                <a href="https://github.com/manjumudhiraj/business-card" target="_blank"
+                                    class="btn-small outline">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- To-do App Placeholder -->
+                    <div class="project-card glass-panel fade-up" style="transition-delay: 0.1s;">
+                        <div class="project-image" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9 11l3 3L22 4"></path>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <h3>To-Do App </h3>
+                            <p>An interactive task management application demonstrating DOM manipulation and local
+                                storage data persistence.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://manjumudhiraj.github.io/to-do-app/" class="btn-small"
+                                    target="_blank">Live Demo</a>
+                                <a href="https://github.com/manjumudhiraj/to-do-app" target="_blank"
+                                    class="btn-small outline">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weather App Placeholder -->
+                    <div class="project-card glass-panel fade-up" style="transition-delay: 0.2s;">
+                        <div class="project-image" style="background: linear-gradient(135deg, #f59e0b, #b45309);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                                <path d="M12 2v2"></path>
+                                <path d="M12 20v2"></path>
+                                <path d="M2.5 9.5L4 11"></path>
+                                <path d="M20 11l1.5-1.5"></path>
+                                <path d="M22 22l-2.5-2.5"></path>
+                                <path d="M4.5 22.5L2 20"></path>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <h3>Weather App (Upcoming)</h3>
+                            <p>A dynamic application fetching real-time weather data from public APIs based on user
+                                location search.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>API Integration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small disabled" onclick="return false;">Live Demo</a>
+                                <a href="https://github.com/manjumudhiraj" target="_blank"
+                                    class="btn-small outline disabled" onclick="return false;">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Summary Section -->
+        <section id="github-sec" class="github-section section">
+            <div class="container">
+                <h2 class="section-title fade-up">Open Source & Contributions</h2>
+                <div class="github-card glass-panel fade-up">
+                    <div class="github-header">
+                        <div class="github-profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            <div>
+                                <h3>@manjumudhiraj</h3>
+                                <p>Active on GitHub</p>
+                            </div>
+                        </div>
+                        <div class="github-stats">
+                            <div class="stat">
+                                <span class="stat-num">5+</span>
+                                <span class="stat-label">Total Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="github-graph">
+                        <p class="graph-title">GitHub Contributions</p>
+
+                        <img src="https://ghchart.rshah.org/ff7849/manjumudhiraj" alt="GitHub Contribution Graph"
+                            class="github-chart">
+                    </div>
+
+                    <div class="github-action">
+                        <a href="https://github.com/manjumudhiraj" target="_blank" class="btn primary">View My
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title fade-up">Contact Me</h2>
+                <div class="contact-wrapper fade-up">
+                    <form id="contact-form" class="contact-form glass-panel">
+                        <input type="hidden" name="access_key" value="016979c0-a8bd-46f3-83eb-7ce244bf161c">
+
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Say hello..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn primary btn-block">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                    <div class="social-links glass-panel">
+                        <p>Let's connect:</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/manjumudhiraj" target="_blank" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="www.linkedin.com/in/manjunath-garela-6ba240410" target="_blank"
+                                aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3>Message Sent Successfully!</h3>
+            <button id="close-popup">OK</button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 G.Manjunath . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
